@@ -49,7 +49,7 @@ Agents MUST implement these validation rules:
   and forward slashes (`/`).
 - Vendor values have a maximum size of 256 chars.
 - Vendor values may only contain ASCII RFC0020 characters (i.e., the range `0x20` to `0x7E`) except comma `,` and `=`.
-- The keys and values used in the `elastic` entry must not contain the characters `:` and `;`.
+- In addition to the above limitations, the keys and values used in the `elastic` entry must not contain the characters `:` and `;`.
 - If adding another key/value pair to the `elastic` entry would exceed the limit of 256 chars,
   that key/value pair MUST be ignored by agents.
   The key/value and entry separators `:` and `;` have to be considered as well.
