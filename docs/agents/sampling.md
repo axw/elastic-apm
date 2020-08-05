@@ -53,7 +53,7 @@ trace-flags: https://www.w3.org/TR/trace-context/#sampled-flag
 
 In addition to propagating the sampling decision (boolean), agents must also propagate
 the sampling weight to ensure a consistent weight is applied to all events in the trace.
-This is achieved by adding a `w` attribute to our [`elastic` `tracestate` key](agent-development.md#tracestate) when calculating the
+This is achieved by adding a `w` attribute to our [`elastic` `tracestate` key](distributed-tracing.md#tracestate) when calculating the
 sampling weight.
 
 For example:
